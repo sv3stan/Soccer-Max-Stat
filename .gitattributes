@@ -1,0 +1,8 @@
+# Указываем, что файлы Delphi
+*.pas linguist-language=Delphi
+*.dpr linguist-language=Delphi
+*.dfm linguist-language=Delphi
+*.dcu linguist-language=Delphi
+
+# Игнорируем другие языки
+*.pasc linguist-language=Pascal# 
