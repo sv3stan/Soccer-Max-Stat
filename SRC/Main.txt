@@ -1,0 +1,2873 @@
+object Form1: TForm1
+  Left = 210
+  Top = 187
+  Width = 1077
+  Height = 727
+  Caption = 'Max-Soccer-Stat'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000002434
+    34002C6C9400A44C3400947C9C00346C5C005C749400B47C3400A4BCCC00544C
+    4C00D4E4EC009C7CDC006C9CAC00AC8464003494A4005C746400A4544C00FF22
+    27662222C9A66F79F2F2229679C6F222299292729A292672229929223299888F
+    08E88EC3C8833F8F8888800880888E88E880008888880808E88EEE884040E400
+    000400000004E3833EE88808800840E6CE4CEEC4E0E88308E0088088CE330088
+    048005000FE00800009007EEC04E80040000410C088B008004B0E97309990040
+    440E40EF448E4E04E44037BB9999844E048000EED85553840E0083BB99998008
+    EE888BE3888880844E5089BB9999804004ED91BB01D40084578059BB99998050
+    800E009005B70888590B33BB99998848EE8E099000808E8F98443BBB99B900E0
+    000E099EE4040389978439BB9999800000845790197B830BB7BD39BB9939E800
+    40E9999199988053997799BB9979EC8E80E799EB799487CE993799BB997950EE
+    084769F7799400E0999999BB99E98E03E309F9C779948999799997BB99E988E7
+    E587F93339985977793399BB99898058B8E789F3799B9997793397B599890B79
+    9F3C2999799999C2993C93B599398E99937019777993A97299CB95BB99799779
+    999979C7799EA9789993855197997397913CF9237998E9999C0DD55E79799999
+    7833F9837994B9994D3778E839975977783CC9473999D99009B97855B7793779
+    7833E9077799979199962085B57F8777735C897997974E7797222200F222E777
+    73CC0997995517775222222FF22F87777EC47979780177772222222222220000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000}
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel5: TPanel
+    Left = 178
+    Top = 0
+    Width = 833
+    Height = 654
+    Align = alClient
+    Caption = 'Panel5'
+    TabOrder = 4
+    OnResize = Panel5Resize
+    object Panel6: TPanel
+      Left = 1
+      Top = 1
+      Width = 831
+      Height = 336
+      Align = alTop
+      TabOrder = 0
+      object Panel11: TPanel
+        Left = 1
+        Top = 306
+        Width = 829
+        Height = 29
+        Align = alBottom
+        TabOrder = 0
+        object Button4: TButton
+          Left = 8
+          Top = 3
+          Width = 97
+          Height = 25
+          Caption = #1042#1099#1073#1086#1088#1082#1072' '#1080#1075#1088
+          TabOrder = 0
+          OnClick = Button4Click
+        end
+      end
+      object Panel12: TPanel
+        Left = 1
+        Top = 1
+        Width = 829
+        Height = 24
+        Align = alTop
+        TabOrder = 1
+        object Label1: TLabel
+          Left = 8
+          Top = 0
+          Width = 90
+          Height = 19
+          Caption = #1042#1080#1076' '#1090#1072#1073#1083#1080#1094#1099
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clMaroon
+          Font.Height = -16
+          Font.Name = 'Times New Roman'
+          Font.Style = []
+          ParentFont = False
+        end
+      end
+      object Panel13: TPanel
+        Left = 1
+        Top = 25
+        Width = 829
+        Height = 281
+        Align = alClient
+        TabOrder = 2
+        OnResize = Panel13Resize
+        object NextGrid13: TNextGrid
+          Left = 1
+          Top = 1
+          Width = 827
+          Height = 279
+          Align = alClient
+          HeaderStyle = hsFlatBorders
+          Options = [goGrid, goHeader, goLockFixedCols]
+          TabOrder = 0
+          TabStop = True
+          Visible = False
+          object NxTextColumn48: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 25
+            Header.Caption = #1058#1091#1088
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 0
+            SortType = stAlphabetic
+            Width = 25
+          end
+          object NxTextColumn49: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 40
+	    Header.Caption = #1044#1072#1090#1072
+	    Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 1
+            SortType = stAlphabetic
+            Width = 40
+          end
+          object NxTextColumn50: TNxTextColumn
+            DefaultWidth = 100
+            Header.Caption = #1050#1086#1084'. 1'
+	    Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 2
+            SortType = stAlphabetic
+            Width = 100
+          end
+          object NxTextColumn51: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 30
+            Header.Caption = '1 '#1090'.'
+            Header.Alignment = taCenter            
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 3
+            SortType = stAlphabetic
+            Width = 30
+          end
+          object NxTextColumn52: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 30
+            Header.Caption = '2 '#1090'.'
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 4
+            SortType = stAlphabetic
+            Width = 30
+          end
+          object NxTextColumn53: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 30
+            Header.Caption = #1048#1090'.'
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 5
+            SortType = stAlphabetic
+            Width = 30
+          end
+          object NxTextColumn54: TNxTextColumn
+            Alignment = taRightJustify
+            DefaultWidth = 100
+            Header.Caption = #1050#1086#1084'. 2'
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 6
+            SortType = stAlphabetic
+            Width = 100
+          end
+          object NxTextColumn55: TNxTextColumn
+            Alignment = taRightJustify
+            DefaultWidth = 120
+            Header.Caption = #1056#1077#1092#1077#1088#1080
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 7
+            SortType = stAlphabetic
+            Width = 120
+          end
+          object NxTextColumn56: TNxTextColumn
+            Alignment = taRightJustify
+            DefaultWidth = 120
+            Header.Caption = #1057#1090#1072#1076#1080#1086#1085
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 8
+            SortType = stAlphabetic
+            Width = 120
+          end
+          object NxTextColumn57: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 100
+            Header.Caption = #1047#1088#1080#1090#1077#1083#1080
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            Position = 9
+            SortType = stAlphabetic
+            Width = 100
+          end
+        end
+        object NextGrid4: TNextGrid
+          Left = 148
+          Top = 16
+          Width = 37
+          Height = 41
+          AppearanceOptions = [aoHighlightSlideCells]
+          FixedCols = 2
+          FooterSize = 0
+          GridLinesColor = clBtnShadow
+          GridLinesStyle = lsFramed
+          HeaderSize = 16
+          HeaderStyle = hsFlatBorders
+          HomeEndBehaviour = hebLeftRight
+          Options = [goDisableColumnMoving, goGrid, goHeader]
+          RowSize = 14
+          ParentFont = False
+          TabOrder = 2
+          TabStop = True
+          Visible = False
+          OnClick = NextGrid4Click
+          OnSelectCell = NextGrid4SelectCell
+        end
+        object NextGrid2: TNextGrid
+          Left = 192
+          Top = 15
+          Width = 33
+          Height = 42
+          FixedCols = 1
+          GridLinesColor = clSilver
+          GridLinesStyle = lsFramed
+          HeaderStyle = hsFlatBorders
+          Options = [goDisableColumnMoving, goGrid, goHeader]
+          ParentFont = False
+          ShowHint = True
+          TabOrder = 1
+          TabStop = True
+          Visible = False
+          OnCellClick = NextGrid2CellClick
+        end
+        object NextGrid6: TNextGrid
+          Left = 248
+          Top = 8
+          Width = 41
+          Height = 41
+          FixedCols = 2
+          GridLinesColor = clGray
+          GridLinesStyle = lsFramed
+          HeaderStyle = hsFlatBorders
+          Options = [goDisableColumnMoving, goGrid, goHeader]
+          TabOrder = 3
+          TabStop = True
+          Visible = False
+          WantReturns = True
+          OnCellClick = NextGrid6CellClick
+          OnSelectCell = NextGrid6SelectCell
+          object NxTextColumn9: TNxTextColumn
+            Alignment = taCenter
+            Color = clBtnFace
+            DefaultWidth = 15
+            Enabled = False
+            Header.Caption = #1052
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 0
+            SortType = stAlphabetic
+            Width = 15
+          end
+          object NxTextColumn10: TNxTextColumn
+            Color = clBtnFace
+            DefaultWidth = 100
+            Enabled = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = #1050#1086#1084#1072#1085#1076#1072
+            Header.Alignment = taCenter
+            Options = [coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 1
+            SortType = stAlphabetic
+            Width = 100
+          end
+          object NxTextColumn11: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 15
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = #1048
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 2
+            SortType = stAlphabetic
+            Width = 15
+          end
+          object NxTextColumn12: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 15
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = #1042
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 3
+            SortType = stAlphabetic
+            Width = 15
+          end
+          object NxTextColumn13: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 15
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = #1053
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 4
+            SortType = stAlphabetic
+            Width = 15
+          end
+          object NxTextColumn14: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 15
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = #1055
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 5
+            SortType = stAlphabetic
+            Width = 15
+          end
+          object NxTextColumn15: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 15
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = #1052
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 6
+            SortType = stAlphabetic
+            Width = 15
+          end
+          object NxTextColumn16: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 15
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = #1052
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 7
+            SortType = stAlphabetic
+            Width = 15
+          end
+          object NxTextColumn17: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 15
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = #1054
+            Header.Alignment = taCenter
+            Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 8
+            SortType = stAlphabetic
+            Width = 15
+          end
+          object NxTextColumn18: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 20
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = '1'
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 9
+            SortType = stAlphabetic
+            Width = 20
+          end
+          object NxTextColumn19: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 20
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = '2'
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 10
+            SortType = stAlphabetic
+            Width = 20
+          end
+          object NxTextColumn20: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 20
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = '3'
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 11
+            SortType = stAlphabetic
+            Width = 20
+          end
+          object NxTextColumn21: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 20
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = '4'
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 12
+            SortType = stAlphabetic
+            Width = 20
+          end
+          object NxTextColumn22: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 20
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = '5'
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 13
+            SortType = stAlphabetic
+            Width = 20
+          end
+          object NxTextColumn23: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 20
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = '6'
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 14
+            SortType = stAlphabetic
+            Width = 20
+          end
+          object NxTextColumn24: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 20
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = '7'
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 15
+            SortType = stAlphabetic
+            Width = 20
+          end
+          object NxTextColumn25: TNxTextColumn
+            Alignment = taCenter
+            DefaultWidth = 20
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWhite
+            Font.Height = -11
+            Font.Name = 'MS Serif'
+            Font.Style = []
+            Header.Caption = '8'
+            Header.Alignment = taCenter
+            Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+            ParentFont = False
+            Position = 16
+            SortType = stAlphabetic
+            Width = 20
+          end
+        end
+        object XStringGrid1: TXStringGrid
+          Left = 320
+          Top = 7
+          Width = 49
+          Height = 50
+          ColCount = 9
+          Ctl3D = False
+          DefaultColWidth = 20
+          DefaultRowHeight = 16
+          FixedCols = 2
+          RowCount = 21
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Options = [goFixedVertLine, goFixedHorzLine, goRangeSelect]
+          ParentCtl3D = False
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 5
+          Visible = False
+          OnClick = xStringGrid1Click
+          OnMouseDown = XStringGrid1MouseDown
+          FixedLineColor = clBlack
+          SelectedColor = clBlue
+          SelectedTextColor = clWhite
+          Columns = <
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = True
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 100
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = cl3DLight
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = cl3DLight
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = cl3DLight
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clWhite
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end>
+          MultiLine = False
+          ImmediateEditMode = False
+          ColWidths = (
+            13
+            100
+            13
+            13
+            13
+            13
+            13
+            13
+            13)
+        end
+        object XStringGrid2: TXStringGrid
+          Left = 376
+          Top = 15
+          Width = 49
+          Height = 42
+          ColCount = 9
+          Ctl3D = False
+          DefaultColWidth = 20
+          DefaultRowHeight = 16
+          FixedCols = 2
+          RowCount = 1
+          FixedRows = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goRangeSelect]
+          ParentCtl3D = False
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 6
+          Visible = False
+          OnClick = XStringGrid2Click
+          OnMouseDown = XStringGrid2MouseDown
+          FixedLineColor = clBlack
+          SelectedColor = clBlue
+          SelectedTextColor = clWhite
+          Columns = <
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = True
+            end
+            item
+              Color = clMenu
+              Width = 100
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clWhite
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end>
+          MultiLine = False
+          ImmediateEditMode = False
+          ColWidths = (
+            13
+            100
+            13
+            13
+            13
+            13
+            13
+            13
+            13)
+        end
+        object StringGrid1: TXStringGrid
+          Left = 432
+          Top = 15
+          Width = 49
+          Height = 42
+          ColCount = 9
+          Ctl3D = False
+          DefaultColWidth = 20
+          DefaultRowHeight = 16
+          FixedCols = 2
+          FixedRows = 0
+          Options = [goFixedVertLine, goFixedHorzLine, goRangeSelect]
+          ParentCtl3D = False
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 4
+          Visible = False
+          OnClick = StringGrid1Click
+          OnMouseDown = StringGrid1MouseDown
+          FixedLineColor = clBlack
+          GridLineColor = clGray
+          SelectedColor = clBlue
+          SelectedTextColor = clWhite
+          Columns = <
+            item
+              HeaderAlignment = taCenter
+              Color = clBtnFace
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = True
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clBtnFace
+              Width = 100
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = cl3DLight
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = cl3DLight
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clMenu
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = cl3DLight
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clWindowText
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end
+            item
+              HeaderAlignment = taCenter
+              Color = clWhite
+              Width = 13
+              Font.Charset = RUSSIAN_CHARSET
+              Font.Color = clBlack
+              Font.Height = -11
+              Font.Name = 'MS Serif'
+              Font.Style = []
+              Alignment = taCenter
+              EditorInheritsCellProps = False
+            end>
+          MultiLine = False
+          ImmediateEditMode = False
+          ColWidths = (
+            13
+            100
+            13
+            13
+            13
+            13
+            13
+            13
+            13)
+          RowHeights = (
+            16
+            16
+            16
+            16
+            16)
+        end
+      end
+    end
+    object RxSplitter6: TRxSplitter
+      Left = 1
+      Top = 337
+      Width = 831
+      Height = 2
+      ControlFirst = Panel6
+      Align = alTop
+    end
+    object Panel7: TPanel
+      Left = 1
+      Top = 339
+      Width = 831
+      Height = 314
+      Align = alClient
+      TabOrder = 2
+      object Label3: TLabel
+        Left = 8
+        Top = 176
+        Width = 32
+        Height = 13
+        Caption = 'Label3'
+        Visible = False
+      end
+      object NextGrid7: TNextGrid
+        Left = 488
+        Top = 36
+        Width = 49
+        Height = 44
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Serif'
+        Font.Style = []
+        GridLinesColor = clBtnShadow
+        HeaderStyle = hsFlatBorders
+        Options = [goGrid]
+        ParentFont = False
+        SortedStyle = soWhite
+        TabOrder = 0
+        TabStop = True
+        Visible = False
+        OnClick = NextGrid7Click
+        OnSelectCell = NextGrid7SelectCell
+        object NxTextColumn27: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 30
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Header.Alignment = taCenter
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 0
+          SortType = stAlphabetic
+          Width = 30
+        end
+        object NxTextColumn28: TNxTextColumn
+          DefaultWidth = 145
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Header.Alignment = taCenter
+          Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 1
+          SortType = stAlphabetic
+          Width = 145
+        end
+        object NxTextColumn29: TNxImageColumn
+          Alignment = taCenter
+          DefaultValue = '0'
+          DefaultWidth = 20
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Header.Alignment = taCenter
+          Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 2
+          SortType = stNumeric
+          Width = 20
+          Images = ImageList2
+        end
+      end
+      object NextGrid8: TNextGrid
+        Left = 550
+        Top = 36
+        Width = 43
+        Height = 44
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Serif'
+        Font.Style = []
+        GridLinesColor = clBtnShadow
+        HeaderStyle = hsFlatBorders
+        Options = [goDisableColumnMoving, goGrid, goHeader]
+        ParentFont = False
+        TabOrder = 1
+        TabStop = True
+        Visible = False
+        object NxTextColumn33: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 0
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn34: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 100
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Header.Alignment = taCenter
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 1
+          SortType = stAlphabetic
+          Width = 100
+        end
+        object NxTextColumn35: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 2
+          SortType = stAlphabetic
+          Width = 20
+        end
+      end
+      object NextGrid9: TNextGrid
+        Left = 600
+        Top = 36
+        Width = 49
+        Height = 44
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'MS Serif'
+        Font.Style = []
+        GridLinesColor = clBtnShadow
+        HeaderStyle = hsFlatBorders
+        Options = [goGrid]
+        ParentFont = False
+        SortedStyle = soWhite
+        TabOrder = 2
+        TabStop = True
+        Visible = False
+        OnClick = NextGrid9Click
+        OnSelectCell = NextGrid9SelectCell
+        object NxTextColumn36: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 30
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Header.Alignment = taCenter
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 0
+          SortType = stAlphabetic
+          Width = 30
+        end
+        object NxTreeColumn2: TNxTextColumn
+          DefaultWidth = 145
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Header.Alignment = taCenter
+          Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 1
+          SortType = stAlphabetic
+          Width = 145
+        end
+        object NxImageColumn1: TNxImageColumn
+          Alignment = taCenter
+          DefaultValue = '0'
+          DefaultWidth = 20
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Serif'
+          Font.Style = []
+          Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 2
+          SortType = stNumeric
+          Width = 20
+          Images = ImageList2
+        end
+      end
+      object NextGrid10: TNextGrid
+        Left = 656
+        Top = 36
+        Width = 41
+        Height = 44
+        GridLinesColor = clBtnShadow
+        Options = [goGrid]
+        TabOrder = 3
+        TabStop = True
+        Visible = False
+        object NxTextColumn30: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 60
+          Enabled = False
+          Header.Alignment = taCenter
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 0
+          SortType = stAlphabetic
+          Width = 60
+        end
+        object NxTextColumn58: TNxTextColumn
+          DefaultWidth = 300
+          Position = 1
+          SortType = stAlphabetic
+          Width = 300
+        end
+      end
+      object NextGrid11: TNextGrid
+        Left = 704
+        Top = 36
+        Width = 41
+        Height = 44
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        HeaderSize = 24
+        HeaderStyle = hsFlatBorders
+        ParentFont = False
+        TabOrder = 4
+        TabStop = True
+        Visible = False
+        object NxTextColumn31: TNxTextColumn
+          DefaultWidth = 200
+          Font.Charset = RUSSIAN_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -24
+          Font.Name = 'Times New Roman'
+          Font.Style = [fsBold]
+          Header.Alignment = taCenter
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 0
+          SortType = stAlphabetic
+          Width = 200
+        end
+        object NxTextColumn32: TNxTextColumn
+          DefaultWidth = 100
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          Header.Alignment = taCenter
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 1
+          SortType = stAlphabetic
+          Width = 100
+        end
+        object NxTextColumn37: TNxTextColumn
+          DefaultWidth = 200
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -19
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          Header.Alignment = taCenter
+          Options = [coFixedSize, coPublicUsing, coShowTextFitHint]
+          ParentFont = False
+          Position = 2
+          SortType = stAlphabetic
+          Width = 200
+        end
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 1014
+    Top = 0
+    Width = 55
+    Height = 654
+    Align = alRight
+    Alignment = taRightJustify
+    Caption = 'Panel1'
+    Constraints.MaxWidth = 300
+    Constraints.MinWidth = 50
+    TabOrder = 0
+    object Panel9: TPanel
+      Left = 1
+      Top = 1
+      Width = 53
+      Height = 404
+      Align = alClient
+      TabOrder = 0
+      object NextGrid3: TNextGrid
+        Left = 1
+        Top = 1
+        Width = 51
+        Height = 365
+        Align = alClient
+        HeaderStyle = hsFlatBorders
+        Options = [goGrid, goHeader]
+        TabOrder = 0
+        TabStop = True
+        Visible = False
+        OnClick = NextGrid3Click
+        OnSelectCell = NextGrid3SelectCell
+        object NxDateColumn1: TNxDateColumn
+          Alignment = taCenter
+          DefaultValue = '13.12'
+          DefaultWidth = 35
+          Enabled = False
+          Header.Caption = #1044#1072#1090#1072
+          Header.Alignment = taCenter
+          Options = [coCanClick, coCanSort, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 0
+          SortKind = skDescending
+          SortType = stDate
+          Width = 35
+          DateSeparator = '.'
+          NoneCaption = 'None'
+          TodayCaption = 'Today'
+        end
+        object NxTextColumn1: TNxTextColumn
+          Alignment = taRightJustify
+          Enabled = False
+          Header.Caption = #1050#1086#1084#1072#1085#1076#1072
+          Header.Alignment = taCenter
+          Options = [coCanClick, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 1
+          SortType = stAlphabetic
+        end
+        object NxTextColumn2: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 25
+          Header.Caption = '1 '#1090'.'
+          Header.Alignment = taCenter
+          Options = [coCanClick, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 2
+          SortType = stAlphabetic
+          Width = 25
+        end
+        object NxTextColumn3: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 25
+          Header.Caption = '2 '#1090'.'
+          Header.Alignment = taCenter
+          Options = [coCanClick, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 3
+          SortType = stAlphabetic
+          Width = 25
+        end
+        object NxTextColumn4: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 25
+          Header.Caption = #1048#1090
+          Header.Alignment = taCenter
+          Options = [coCanClick, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 4
+          SortType = stAlphabetic
+          Width = 25
+        end
+        object NxTextColumn26: TNxTextColumn
+          Enabled = False
+          Header.Caption = #1050#1086#1084#1072#1085#1076#1072
+          Header.Alignment = taCenter
+          Options = [coCanClick, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 5
+          SortType = stAlphabetic
+        end
+      end
+      object Panel8: TPanel
+        Left = 1
+        Top = 366
+        Width = 51
+        Height = 37
+        Align = alBottom
+        TabOrder = 1
+        object CheckBox1: TCheckBox
+          Left = 8
+          Top = 16
+          Width = 150
+          Height = 17
+          Caption = #1056#1072#1079#1073#1080#1074#1072#1090#1100' '#1087#1086' '#1090#1072#1081#1084#1072#1084
+          Checked = True
+          State = cbChecked
+          TabOrder = 0
+          OnClick = CheckBox1Click
+        end
+      end
+    end
+    object Panel10: TPanel
+      Left = 1
+      Top = 408
+      Width = 53
+      Height = 245
+      Align = alBottom
+      TabOrder = 1
+      object NextGrid12: TNextGrid
+        Left = 1
+        Top = 1
+        Width = 51
+        Height = 243
+        Align = alClient
+        HeaderStyle = hsFlatBorders
+        Options = [goGrid, goHeader]
+        TabOrder = 0
+        TabStop = True
+        Visible = False
+        object NxDateColumn2: TNxDateColumn
+          DefaultValue = '23.12.2008'
+          DefaultWidth = 35
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 0
+          SortType = stDate
+          Width = 35
+          NoneCaption = 'None'
+          TodayCaption = 'Today'
+        end
+        object NxTextColumn38: TNxTextColumn
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 1
+          SortType = stAlphabetic
+        end
+        object NxTextColumn39: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Header.DisplayMode = dmImageOnly
+          Header.Glyph.Data = {
+            AE040000424DAE0400000000000036040000280000000A0000000A0000000100
+            0800000000007800000000000000000000000001000000010000F8F8F8007070
+            7000BCBCBD004E4E4E00BFBFC0003B3B3B004D4D4D0040404000E4E4E4003434
+            34003737370080808000D0D0D100C1C1C100C1C1C2009F9F9F00E4E3E400B7B7
+            B8008787870084848400C5C5C500C8C8C9006F6F6F00DBDBDB00505050006363
+            6400B6B6B6007F7F7F00F7F7F700A3A3A4008181820042424300C0C0C000C4C4
+            C500F1F1F1002A2A2A0032323200CBCBCC00D8D8D80087878800EBEBEC00A3A3
+            A3005A5A5A00B5B4B60030303000DDDDDD00F0F0F100E4E4E5003D3D3D00DFDF
+            DF00ACABAC00B6B6B7002020200060606000FEFEFE00FCFCFC00BFBFBF000000
+            0000FFFFFF00FFFFFF0000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000003B3B17351404
+            2A383B3B00003B0F3930022B1F39353B0000371A2933150E1D271E1000001C28
+            080D092412041120000036002E133939032521020000383A3703393923260C19
+            000035073A3616062D2F0A340000382C3A3A3A360022051B00003B313A3A0B01
+            3A37323B00003B3B3A013939183A3B3B0000}
+          Header.Alignment = taCenter
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 2
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn40: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Header.Caption = #1055'.'
+          Header.Hint = #1043#1086#1083#1077#1074#1099#1077' '#1087#1077#1088#1077#1076#1072#1095#1080
+          Header.Alignment = taCenter
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 3
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn41: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Header.DisplayMode = dmImageOnly
+          Header.Glyph.Data = {
+            AE040000424DAE0400000000000036040000280000000A0000000A0000000100
+            0800000000007800000000000000000000000001000000010000E0E0E0004040
+            4000EFEFEF00B7B7B700D4D4D400707070007272730060606000F9F9F900E6E6
+            E60078787800FCFCFC00D2D2D30000000000D5D5D50085858600AAAAAB00FAFA
+            FB000F0F0F00FFFFFF007B7B7C00D9D9D90020202000BCBCBD00898989008F8F
+            8F00DFDFDF0030303000DADADA00BFBFBF0093939300A1A1A2009F9F9F00FAFA
+            FA007F7F7F00F5F5F50096969600EDEDED00FFFFFF0000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000262626260E04
+            2626262600002626021B0A06160226260000262608090F141704262600002626
+            1A11120D0C1F26260000222119201D101E070B2200002425001C050515002524
+            0000222323260303132323220000242525232525232525240000242525232525
+            232525240000011824222424222424010000}
+          Header.Alignment = taCenter
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 4
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn42: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Header.DisplayMode = dmImageOnly
+          Header.Glyph.Data = {
+            AE040000424DAE0400000000000036040000280000000A0000000A0000000100
+            0800000000007800000000000000000000000001000000010000EFEFEF004040
+            4000B0B0B000010F580002167E00808ABE00919EE3000715610020202000F5F5
+            F500303030000922A800DFDFDF00C1C3D1008F919C00808080006875BA00273E
+            AF000613590003188700EFF1FC00021CA30005156B000C2297000423C6001830
+            AB000623B70045518F00606060000000000003167500D0D2DC00C5C5C500C1C3
+            D00008155C00FAFAFA0000020C007F7F7F00EAEAEA008B8B8B00DBDBDB00FFFF
+            FF00000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000292929290D21
+            0029292900002929000A0722080C292900002929061A16121710292900002929
+            0518241D0B1B2929000025090E0415131E1C2325000027281F11030319202827
+            0000252626290202142626250000272828262828262828270000272828262828
+            262828270000010F27252727252727010000}
+          Header.Alignment = taCenter
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 5
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn43: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Header.DisplayMode = dmImageOnly
+          Header.Glyph.Data = {
+            AE040000424DAE0400000000000036040000280000000A0000000A0000000100
+            0800000000007800000000000000000000000001000000010000BFBFBF00010F
+            58000C2297000323C700010B3D000523BE00606060000423C4000723B500050D
+            35000521AF000A1A6D000A1969000C229400212B5F0050525C00031468000209
+            2B000623BA0001062100425AD5000D2292007F7F7F006171C400081E91000109
+            3200515258009F9F9F0002126500071E990032429100111843006376D7004A59
+            A7000B229D000623B500030928000B22990020202000061A81000A22A0000209
+            2A0001092F000A1E83000323C800E0E3F600D0D1D900051150004A59AB000107
+            26003B4CA4000B229B000A22A200030B3100030D3E00A0ACEB004151A4000717
+            6C000822AC000922A6008191E400B3B9DA00061C91000323C90000000000FFFF
+            FF00000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000041412E063021
+            1A0041410000411B403502150940064100002D3E271828332B0B0C3D00002012
+            081D292439250D320000140705104040363422020000383F03044040133A3B2F
+            00000F193F3F01040A231126000000313F3F3F2C07052A16000041173F3F1C01
+            3F031E4100004141370E40401F3C41410000}
+          Header.Alignment = taCenter
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 6
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn44: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Header.DisplayMode = dmImageOnly
+          Header.Glyph.Data = {
+            D2040000424DD20400000000000036040000280000000A0000000D0000000100
+            0800000000009C0000000000000000000000000100000001000020C2FC004CE4
+            FD00C9F6FE0041B8FB00D4F1FF0069C6FD0020B3FC0066C6FD005FF1FC00E1F5
+            FF006FE5FD0088EAFD00D4F8FF00A5EFFE00A5E3FE0075D0FD0037B3FB006FE8
+            FD00C9F0FE004CC2FD0073EEFD004CDEFD004CC7FD00DEFAFF002AECFC005BD1
+            FD001EDEFC001ED6FC0046EFFB008DF1FD003ADBFC003BB5FC005BC2FD0031D2
+            FC004CCDFD004CD3FD00D4F4FF007FF3FD003CEDFC00D5F1FE006DF2FD00D4F3
+            FF00B1E5FE0069DAFD003EE1FD00C9F3FE0020B4FC0028CBFC001DB9FC00A5EC
+            FE0088EDFD0037EDFB00A5E6FE008ADBFD0089E2FD00C9EDFE0041E8FD002CD8
+            FC0088E5FD002CDFFC004CD9FD00ACF5FE003FC3FC001ECEFC00D4F7FF00C9F2
+            FE00A5F1FE002CBDFC0029B7FC002CC5FC00D2F9FE004CE9FD0029AFFC00A5E9
+            FE0070E0FD001EE4FC001FC8FC0029E5FC002CCBFC002CD1FC0084F5FE008BDF
+            FD00D4F6FF0053EFFC00C9F5FE0021C9FC0021CFFC002CECFC0021C2FC0021DE
+            FC0021D6FC0021E4FC0021B4FC0021BAFC002CB0FC0000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000334D3B394F4E
+            454344100000575B595A5655585D5C5E0000575B595A5655585D5C5E0000575B
+            595A5655585D5C5E0000575B595A5655585D5C5E0000184B1A1B3F4C005D5C5E
+            000026382C1E212F00302E5E00005314110A4A2B193E06480000081D320B3A36
+            51350F1F0000283D420D3149340E2A200000254602542D411237270700005017
+            0C4052242904090500001C4701153C23221613030000}
+          Header.Alignment = taCenter
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 7
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn45: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Header.DisplayMode = dmImageOnly
+          Header.Glyph.Data = {
+            D2040000424DD20400000000000036040000280000000A0000000D0000000100
+            0800000000009C00000000000000000000000001000000010000CFD6F900CED5
+            F7000627D5007B8EEE001537E6006076EA003650D8009BA8F0003A55E5001231
+            D4001332D700CED5F8001D39D0009BA9F100092CE5001737E3000729DF00566B
+            DB00CED6F800C3CBF6005268DB00C2CBF500DAE0FB009CAAF200C3CBF8002F4D
+            E9008294F2003855E2002544E3002545E9001434D9000E2DCD000424CF000528
+            DC001031DA001B3ADE007A8DF2009CAAF3003854DF001435DD000E2DD000475F
+            E0006378E100DCE1F900A4B0F600576EE500CED4F900C3CCF600C3CCF700C2CA
+            F4001636E0006076E8002945D2000122D100CFD6F6002B49EC003650DA00213E
+            D100465DD9001739E9000627D2007B8EEF000528D8002A48E600A8B2EE007C8D
+            E6009AA8EE006077EB00667CEE003753EC002844D8007A8DEC003A56E7007D8F
+            E9007488F2007B8DEB003B57E9006077F000435FED00082AE2005069EE003752
+            DD009AA8ED000A2CDF00082AD800082BDC000B2DE200193BE9000728D5000C2F
+            E5000626D200102FCE000525CF00000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000001D040F32271E
+            0A09280C0000575956535554585A5C5B0000575956535554585A5C5B00005759
+            56535554585A5C5B0000575956535554585A5C5B00003B0E4F10213E023C5C5B
+            000037193F1C23220235205B00004E444305332D29465C1F0000501A3D03474B
+            49412A3900004D2C25170D074252403A00004A2E18302F131531361400002416
+            0000120B01012B110000454C48081B26513806340000}
+          Header.Alignment = taCenter
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 8
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn46: TNxTextColumn
+          Alignment = taCenter
+          DefaultWidth = 20
+          Header.DisplayMode = dmImageOnly
+          Header.Glyph.Data = {
+            AE040000424DAE0400000000000036040000280000000A0000000A0000000100
+            080000000000780000000000000000000000000100000001000048AA31003A75
+            0A00EAF0E900509C3100EAF0E800AFC69D00A2CA920097C082009BC38A005185
+            2700538C2C0052AF3D004E952C0074AC59007BAA5F0050A8380099C2850054B6
+            43009DCB8F0075B55E0046891F00BAD8AE00B0CBA1009AC6880070B359004C9F
+            2F0076B15D00EAEFE800A3CB95009ECF9200B2CAA2006FA35000B1CEA300507E
+            22009FD29500EAF1E900B1D0A100AEC39B00408C1B003E841500429420003C7C
+            0F0046A32C00449B2600FFFFFF00000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000000000000000000000011002A2B2826
+            27290121000022002A2B2826272901250000230B2A2B28262729092C00002C1D
+            2A2B28262729052C00002C020F19030C140A2C2C00002C2C12181A0D1F1E2C2C
+            00002C2C041317100E2C2C2C00002C2C2C1C1524162C2C2C00002C2C2C1B0607
+            2C2C2C2C00002C2C2C2C08202C2C2C2C0000}
+          Header.Alignment = taCenter
+          Options = [coDisableMoving, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 9
+          SortType = stAlphabetic
+          Width = 20
+        end
+        object NxTextColumn47: TNxTextColumn
+          DefaultWidth = 20
+          Header.DisplayMode = dmImageOnly
+          Header.Glyph.Data = {
+            AE040000424DAE0400000000000036040000280000000A0000000A0000000100
+            0800000000007800000000000000000000000001000000010000082AD900092B
+            DC00BCC6F50093A2EE00BDC6F600A3B0F400ABB7F1004A63E3004A62E1001737
+            DB001D3CDC006D81E800ABB6EF00BCC5F4003853DA005A6FDC00ACB7F2002846
+            E000BCC5F3004E69ED008394EC008595E9001D3BD9008394EA006D80E600EFF2
+            FC008999E8004662EE0094A3F100ADB8F5004C65E80092A1EB00BDC6F700A3B1
+            F50093A1ED002946E3006E82EA005D72DF003B57E800ABB6F0006E82EC004B64
+            E5008E9CE800ACB8F300A2B0F3001735D800B1BBF0005870EB0093A2F0001E3D
+            DF00ADB9F60094A4F200A4B1F600ADB8F400667BE300A2AFF1001D3DE100BDC6
+            F50093A3F400EFF1FC00FFFFFF00000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000003C3C3C3C3714
+            3C3C3C3C00003C3C3C3C1109193C3C3C00003C3C3C2C0100173C3C3C00003C3C
+            3C2301002D3B3C3C00003C3C0538310A16153C3C00003C3C261E2907080E3B3C
+            00003C212F28240B18361A3C00003C13331C3003221F253B0000343A20043902
+            0D122E2A00001B321D352B1006270C0F0000}
+          Position = 10
+          SortType = stAlphabetic
+          Width = 20
+        end
+      end
+    end
+    object RxSplitter1: TRxSplitter
+      Left = 1
+      Top = 405
+      Width = 53
+      Height = 3
+      ControlFirst = Panel9
+      ControlSecond = Panel10
+      Align = alBottom
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 175
+    Height = 654
+    Align = alLeft
+    Caption = 'Panel2'
+    Constraints.MaxWidth = 175
+    TabOrder = 1
+    object Panel3: TPanel
+      Left = 1
+      Top = 1
+      Width = 173
+      Height = 176
+      Align = alTop
+      Caption = 'Panel3'
+      TabOrder = 0
+      object NextGrid1: TNextGrid
+        Left = 1
+        Top = 1
+        Width = 171
+        Height = 174
+        Align = alClient
+        HeaderStyle = hsFlatBorders
+        Options = [goDisableColumnMoving, goGrid]
+        TabOrder = 0
+        TabStop = True
+        OnCellClick = NextGrid1CellClick
+        OnResize = NextGrid1Resize
+        OnSelectCell = NextGrid1SelectCell
+        object NxTextColumn5: TNxTextColumn
+          DefaultWidth = 100
+          Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing, coShowTextFitHint]
+          Position = 0
+          SortType = stAlphabetic
+          Width = 100
+        end
+      end
+    end
+    object Panel4: TPanel
+      Left = 1
+      Top = 180
+      Width = 173
+      Height = 473
+      Align = alClient
+      Caption = 'Panel4'
+      TabOrder = 1
+      object RxSplitter2: TRxSplitter
+        Left = 169
+        Top = 20
+        Width = 3
+        Height = 452
+        Align = alRight
+      end
+      object NextGrid5: TNextGrid
+        Left = 1
+        Top = 20
+        Width = 168
+        Height = 452
+        Align = alClient
+        GridLinesColor = clActiveBorder
+        HeaderStyle = hsFlatBorders
+        Options = [goGrid, goHeader]
+        TabOrder = 1
+        TabStop = True
+        OnCellClick = NextGrid5CellClick
+        OnResize = NextGrid5Resize
+        OnSelectCell = NextGrid5SelectCell
+        object NxTreeColumn1: TNxTreeColumn
+          DefaultWidth = 15
+          Options = [coCanClick, coCanInput, coFixedSize, coPublicUsing]
+          Position = 0
+          SortType = stAlphabetic
+          Width = 15
+        end
+        object NxTextColumn7: TNxTextColumn
+          DefaultWidth = 120
+          Position = 1
+          SortType = stAlphabetic
+          Width = 120
+        end
+        object NxTextColumn6: TNxTextColumn
+          Position = 2
+          SortType = stAlphabetic
+          Visible = False
+        end
+        object NxTextColumn8: TNxTextColumn
+          Position = 3
+          SortType = stAlphabetic
+          Visible = False
+        end
+      end
+      object Panel14: TPanel
+        Left = 1
+        Top = 1
+        Width = 171
+        Height = 19
+        Hint = #1042#1089#1103' '#1089#1090#1072#1090#1080#1089#1090#1080#1082#1072' '#1074' '#1076#1072#1083#1100#1085#1077#1081#1096#1077#1084' '#1086#1088#1072#1085#1080#1095#1080#1074#1072#1077#1090#1089#1103' '#1079#1072#1076#1072#1085#1085#1099#1084#1080' '#1076#1072#1090#1072#1084#1080
+        Align = alTop
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 2
+        OnMouseUp = Panel14MouseUp
+        object Label2: TLabel
+          Left = 2
+          Top = 1
+          Width = 108
+          Height = 13
+          Caption = #1054#1075#1088#1072#1085#1080#1095#1080#1090#1100' '#1087#1086' '#1076#1072#1090#1072#1084
+          OnClick = Label2Click
+        end
+        object NxDatePicker1: TNxDatePicker
+          Left = 2
+          Top = 6
+          Width = 96
+          Height = 21
+          TabOrder = 0
+          Text = '09.08.2008'
+          Visible = False
+          OnChange = NxDatePicker1Change
+          HideFocus = False
+          Date = 39669.000000000000000000
+          NoneCaption = 'None'
+          TodayCaption = 'Today'
+        end
+        object NxDatePicker2: TNxDatePicker
+          Left = 2
+          Top = 34
+          Width = 96
+          Height = 21
+          TabOrder = 1
+          Text = '27.12.2008'
+          Visible = False
+          OnChange = NxDatePicker2Change
+          HideFocus = False
+          Date = 39809.000000000000000000
+          NoneCaption = 'None'
+          TodayCaption = 'Today'
+        end
+        object Button2: TButton
+          Left = 107
+          Top = 6
+          Width = 25
+          Height = 50
+          Caption = 'Button2'
+          TabOrder = 2
+          Visible = False
+          OnClick = Button2Click
+        end
+        object Button1: TButton
+          Left = 136
+          Top = 6
+          Width = 25
+          Height = 50
+          Caption = 'Button2'
+          TabOrder = 3
+          Visible = False
+          OnClick = Button1Click
+        end
+      end
+    end
+    object RxSplitter4: TRxSplitter
+      Left = 1
+      Top = 177
+      Width = 173
+      Height = 3
+      ControlFirst = Panel3
+      Align = alTop
+    end
+  end
+  object RxSplitter3: TRxSplitter
+    Left = 175
+    Top = 0
+    Width = 3
+    Height = 654
+    ControlFirst = Panel2
+    ControlSecond = Panel5
+    Align = alLeft
+  end
+  object RxSplitter5: TRxSplitter
+    Left = 1011
+    Top = 0
+    Width = 3
+    Height = 654
+    ControlFirst = Panel1
+    ControlSecond = Panel5
+    Align = alRight
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 654
+    Width = 1069
+    Height = 19
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clBtnText
+    Font.Height = -13
+    Font.Name = 'Times New Roman'
+    Font.Style = []
+    Panels = <
+      item
+        Alignment = taRightJustify
+        Width = 300
+      end
+      item
+        Alignment = taRightJustify
+        Width = 300
+      end
+      item
+        Width = 100
+      end
+      item
+        Width = 50
+      end
+      item
+        Width = 50
+      end>
+    UseSystemFont = False
+  end
+  object EasyQuery1: TEasyQuery
+    RequestLive = False
+    SQL.Strings = (
+      'select Team_1, Team_2, Goal_T_1, Goal_T_2 '
+      'from Game'
+      '')
+    CurrentVersion = '6.30 '
+    InMemory = False
+    BDELikeFilter = False
+    Left = 424
+    Top = 360
+  end
+  object EasyQuery2: TEasyQuery
+    RequestLive = False
+    CurrentVersion = '6.30 '
+    DatabaseFileName = 'C:\FootStat\Table\Franse.edb'
+    InMemory = False
+    BDELikeFilter = False
+    Left = 456
+    Top = 360
+    ParamData = <
+      item
+        DataType = ftUnknown
+        ParamType = ptUnknown
+      end>
+  end
+  object EasyQuery3: TEasyQuery
+    RequestLive = False
+    CurrentVersion = '6.30 '
+    InMemory = False
+    BDELikeFilter = False
+    Left = 488
+    Top = 360
+  end
+  object EasyTable2: TEasyTable
+    CurrentVersion = '6.30 '
+    InMemory = False
+    AutoIndexes = False
+    CacheEnabled = True
+    BDELikeFilter = False
+    Left = 392
+    Top = 360
+  end
+  object EasyQuery4: TEasyQuery
+    RequestLive = False
+    CurrentVersion = '6.30 '
+    InMemory = False
+    BDELikeFilter = False
+    Left = 520
+    Top = 360
+  end
+  object MainMenu1: TMainMenu
+    Left = 584
+    Top = 360
+    object N1: TMenuItem
+      Caption = #1060#1072#1081#1083
+      object N2: TMenuItem
+        Caption = #1054#1090#1082#1088#1099#1090#1100
+      end
+      object N3: TMenuItem
+        Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+      end
+    end
+    object N4: TMenuItem
+      Caption = #1053#1072#1089#1090#1088#1086#1081#1082#1080
+    end
+    object N5: TMenuItem
+      Caption = #1055#1086#1084#1086#1097#1100
+    end
+  end
+  object ImageList1: TImageList
+    Tag = 1
+    Masked = False
+    Left = 193
+    Top = 361
+    Bitmap = {
+      494C010102000400040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000001000000001002000000000000010
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487800F9FBFA00FDFDFE00FDFDFD00FEFEFE00B9B9F5000707
+      DE000808DE000808DE000808DE0000000000000000002AB1F8002AB1F8002AB1
+      F8002AB1F8002AB1F8002AB1F8002AB1F8002AB1F8002AB1F8002AB1F8002AB1
+      F8002AB1F8002AB1F8002AB1F800000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487700FCFEFD00FEFEFE00FDFDFD00FEFEFE00B9B9F5000707
+      DE000808DE000808DE000808DE00000000000000000029B0FA0029B0FA0029B0
+      FA0029B0FA0029B0FA0029B0FA0029B0FA0029B0FA0029B0FA0029B0FA0029B0
+      FA0029B0FA0029B0FA0029B0FA00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487700FDFFFE00FFFFFF00FCFCFC00FDFDFD00B7B7F3000707
+      DE000808DE000808DE000808DE00000000000000000029B0FA0029B0FA0029B0
+      FA0029B0FA0029B0FA0029B0FA0029B0FA0029B0FA0029B0FA0029B0FA0029B0
+      FA0029B0FA0029B0FA0029B0FA00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487800F7F9F800FDFDFD00FDFDFD00FAFAFA00B7B7F3000707
+      DE000808DE000808DE000808DE0000000000000000002AB2FA002AB2FA002AB2
+      FA002AB2FA002AB2FA002AB2FA002AB2FA002AB2FA002AB2FA002AB2FA002AB2
+      FA002AB2FA002AB2FA002AB2FA00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487800F8FAF900FBFBFA00FBFBFB00F9F9F900B7B7F3000707
+      DE000808DE000808DE000808DE00000000000000000027A9F90027A9F90027A9
+      F90027A9F90027A9F90027A9F90027A9F90027A9F90027A9F90027A9F90027A9
+      F90027A9F90027A9F90027A9F900000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487800FBFDFC00FDFDFD00FCFCFC00FAFAFA00B6B6F2000707
+      DE000808DE000808DE000808DE0000000000000000000434F0000434F0000434
+      F0000434F0000434F0000434F0000434F0000434F0000434F0000434F0000434
+      F0000434F0000434F0000434F000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487800FCFDFC00FBFBFA00FEFEFD00FBFBFB00B8B8F4000707
+      DE000808DE000808DE000808DE0000000000000000000025EF000025EF000025
+      EF000025EF000025EF000025EF000025EF000025EF000025EF000025EF000025
+      EF000025EF000025EF000025EF00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487800FDFEFE00FBFCFB00FCFCFC00FAFAF900B9B8F3000707
+      DE000808DE000808DE000808DE0000000000000000000029F5000029F5000029
+      F5000029F5000029F5000029F5000029F5000029F5000029F5000029F5000029
+      F5000029F5000029F5000029F500000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487800FCFEFD00F9F9F900FDFDFD00FCFCFC00BCB9F3000808
+      DE000808DE000808DE000808DE0000000000000000000023D0000023D0000023
+      D0000023D0000023D0000023D0000023D0000023D0000023D0000023D0000023
+      D0000023D0000023D0000023D000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487700FBFCFC00FAFAFA00FCFCFC00FAFAFA00B7B7F3000707
+      DE000808DE000808DE000808DE00000000000000000001020A0001020A000102
+      0A0001020A0001020A0001020A0001020A0001020A0001020A0001020A000102
+      0A0001020A0001020A0001020A00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487700FCFDFD00FDFDFD00FEFEFE00FCFCFC00BABAF6000707
+      DE000808DE000808DE000808DE00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487700FFFFFF00FFFFFF00FFFFFF00FFFFFF00BABAF6000707
+      DE000808DE000808DE000808DE00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DD003A00E8487800FEFFFF00FEFDFD00FEFEFE00FFFEFE00BAB9F4000707
+      DE000808DE000808DE000808DE00000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000DE004200DE004200DE00
+      4200DE003B00E5457300F9FCFD00F9FBFC00F8FAFB00F4FAFB00B9B9F3000807
+      DF000808DE000808DE000808DE00000000000000000004040400040404000404
+      0400040404000404040004040400040404000404040004040400040404000404
+      0400040404000404040003030300000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000100000000100010000000000800000000000000000000000
+      000000000000000000000000FFFFFF00FFFFFFFF000000008001800100000000
+      8001800100000000800180010000000080018001000000008001800100000000
+      8001800100000000800180010000000080018001000000008001800100000000
+      80018001000000008001FFFF000000008001FFFF000000008001FFFF00000000
+      8001800100000000FFFFFFFF0000000000000000000000000000000000000000
+      000000000000}
+  end
+  object EasyQuery5: TEasyQuery
+    RequestLive = False
+    CurrentVersion = '6.30 '
+    InMemory = False
+    BDELikeFilter = False
+    Left = 293
+    Top = 360
+  end
+  object EasyQuery6: TEasyQuery
+    RequestLive = False
+    CurrentVersion = '6.30 '
+    InMemory = False
+    BDELikeFilter = False
+    Left = 325
+    Top = 360
+  end
+  object EasyQuery7: TEasyQuery
+    RequestLive = False
+    CurrentVersion = '6.30 '
+    InMemory = False
+    BDELikeFilter = False
+    Left = 357
+    Top = 360
+  end
+  object EasyDatabase1: TEasyDatabase
+    DatabaseFileName = 'C:\FootStat\Table\Franse.edb'
+    InMemory = False
+    SessionName = 'Default'
+    Left = 261
+    Top = 360
+  end
+  object ImageList2: TImageList
+    Left = 227
+    Top = 361
+    Bitmap = {
+      494C01010A000E00040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000004000000001002000000000000040
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000021E2FC0021D9FC0021D1FC0021C8FC0021BFFC0021B6FC0021AEFC00FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000000000000000
+      00001537E6001737E3001636E0001435DD001434D9001332D7001231D4000E2D
+      D0001D39D0000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000021E2FC0021D9FC0021D1FC0021C8FC0021BFFC0021B6FC0021AEFC00FFFF
+      FF00FFFFFF00000000000000000000000000000000000000000000000000193B
+      E9000C2FE5000B2DE2000A2CDF00082BDC00082AD8000728D5000626D2000525
+      CF00102FCE000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000021E2FC0021D9FC0021D1FC0021C8FC0021BFFC0021B6FC0021AEFC00FFFF
+      FF00FFFFFF00000000000000000000000000000000000000000000000000193B
+      E9000C2FE5000B2DE2000A2CDF00082BDC00082AD8000728D5000626D2000525
+      CF00102FCE000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000021E2FC001CB0F8000C30E7000B2EE200092CDE00082AD9000628D4000526
+      CF00435BD800000000000000000000000000000000000000000000000000193B
+      E9000C2FE5000B2DE2000A2CDF00082BDC00082AD8000728D5000626D2000525
+      CF00102FCE000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000021E2FC001CB0F8000C30E7000B2EE200092CDE00082AD9000628D4000526
+      CF00435BD800000000000000000000000000000000000000000000000000193B
+      E9000C2FE5000B2DE2000A2CDF00082BDC00082AD8000728D5000626D2000525
+      CF00102FCE000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000052F0
+      FD0062EBFD004DB8F8000C30E7000B2EE200092CDE00082AD9000628D4000526
+      CF00435BD8000000000000000000000000000000000000000000000000001739
+      E900092CE500082AE2000729DF000528DC000528D8000627D5000627D2000525
+      CF00102FCE000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000006AF2
+      FD0083EFFD0065BCF8000C30E7000B2EE200092CDE00082AD9000628D4000526
+      CF00435BD8000000000000000000000000000000000000000000000000002B49
+      EC002F4DE9002A48E6002544E3001B3ADE001031DA000627D5000122D1000424
+      CF00102FCE000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000086F4
+      FE00A7F3FE0081C1F9002D4CEA002C4AE6002745E2001535DB000628D4000526
+      CF00435BD800000000000000000000000000000000000000000000000000435F
+      ED00667CEE006077EB006076EA006076E800576EE500475FE0002844D8000525
+      CF000E2DCD000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000A3F7
+      FE00CEF9FE009EC5F9006D82F1006C81EE006B80EB006A7FE8005F75E3003C55
+      DA00435BD8000000000000000000000000000000000000000000000000005069
+      EE008294F2007B8EEF007B8EEE007A8DEC007B8DEB007D8FE9007C8DE6006378
+      E100213ED1000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000006EF2
+      FD0087EFFE0069BDF9009AA9F5009AA8F30099A7F10099A6EF0098A6ED0097A5
+      EB00687AE0000000000000000000000000000000000000000000000000006077
+      F000A4B0F6009CAAF3009CAAF2009BA9F1009BA8F0009AA8EE009AA8ED00A8B2
+      EE00465DD9000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000090F5
+      FD0090F0FD0070BEF900CCD4FA00CCD3F900CCD3F800CBD3F700CBD2F600CBD2
+      F5007486E3000000000000000000000000000000000000000000000000007488
+      F200CED4F900C3CBF800C3CCF700C3CCF600C3CBF600C2CBF500C2CAF400CFD6
+      F6005268DB000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00FFFFFF00C2CBFA008093F2007F92F0007F91EE007E90EB007D8FE8007C8E
+      E6006175DE000000000000000000000000000000000000000000000000007A8D
+      F200DAE0FB00CFD6F900CFD6F900CED6F800CED5F800CED5F700CED5F700DCE1
+      F900566BDB000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000003753
+      EC003B57E9003A56E7003A55E5003855E2003854DF003752DD003650DA003650
+      D8002945D2000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000029E5FC002CDFFC002CD8FC002CD1FC002CCBFC002CC5FC002CBDFC0029B7
+      FC0037B3FB000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000D5D5D500D4D4D40000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000C1C3D100C1C3D000EFEFEF00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000D0D1D900606060004A59AB004A59A70051525800BFBFBF000000
+      0000000000000000000000000000000000000000000000000000000000002CEC
+      FC0021E4FC0021DEFC0021D6FC0021CFFC0021C9FC0021C2FC0021BAFC0021B4
+      FC002CB0FC000000000000000000000000000000000000000000000000000000
+      000000000000EFEFEF0030303000787878007272730020202000EFEFEF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000EFEFEF00303030000715610008155C0020202000DFDFDF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00009F9F9F0000000000030B31000C2297000D229200050D3500000000006060
+      6000000000000000000000000000000000000000000000000000000000002CEC
+      FC0021E4FC0021DEFC0021D6FC0021CFFC0021C9FC0021C2FC0021BAFC0021B4
+      FC002CB0FC000000000000000000000000000000000000000000000000000000
+      000000000000F9F9F900E6E6E600858586007B7B7C00BCBCBD00D4D4D4000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000919EE3000623B70005156B00061359000C2297006875BA000000
+      000000000000000000000000000000000000000000000000000000000000E0E3
+      F600061C9100061A8100081E91000A22A0000B229B000A1E83000A1A6D000A19
+      6900B3B9DA000000000000000000000000000000000000000000000000002CEC
+      FC0021E4FC0021DEFC0021D6FC0021CFFC0021C9FC0021C2FC0021BAFC0021B4
+      FC002CB0FC000000000000000000000000000000000000000000000000000000
+      000000000000DFDFDF00FAFAFB000F0F0F0000000000D2D2D300A1A1A2000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000808ABE000423C60000020C00000000000922A80045518F000000
+      0000000000000000000000000000000000000000000000000000000000006376
+      D7000623BA000723B500071E990002092A000309280007176C000B2299000C22
+      94003B4CA4000000000000000000000000000000000000000000000000002CEC
+      FC0021E4FC0021DEFC0021D6FC0021CFFC0021C9FC0021C2FC0021BAFC0021B4
+      FC002CB0FC000000000000000000000000000000000000000000000000007F7F
+      7F00FAFAFA008F8F8F009F9F9F00BFBFBF00AAAAAB009393930060606000FCFC
+      FC007F7F7F000000000000000000000000000000000000000000000000007F7F
+      7F00F5F5F5008F919C0002167E00021CA300031887000316750060606000FAFA
+      FA007F7F7F00000000000000000000000000000000000000000000000000425A
+      D5000423C4000523BE00031468000000000000000000030D3E000A22A2000B22
+      9D000C2297000000000000000000000000000000000000000000000000002AEC
+      FC001EE4FC001EDEFC001ED6FC001ECEFC001FC8FC0020C2FC0021BAFC0021B4
+      FC002CB0FC000000000000000000000000000000000000000000000000009696
+      9600EDEDED00E0E0E000DADADA007070700070707000D9D9D900E0E0E000EDED
+      ED00969696000000000000000000000000000000000000000000000000008B8B
+      8B00DBDBDB00D0D2DC00273EAF00010F5800010F58001830AB00C5C5C500DBDB
+      DB008B8B8B000000000000000000000000000000000000000000000000004151
+      A4000323C9000323C700010B3D000000000000000000010621000822AC000922
+      A600051150000000000000000000000000000000000000000000000000003CED
+      FC0041E8FD003EE1FD003ADBFC0031D2FC0028CBFC0020C2FC001DB9FC0020B4
+      FC002CB0FC000000000000000000000000000000000000000000000000007F7F
+      7F00F5F5F500F5F5F50000000000B7B7B700B7B7B70000000000F5F5F500F5F5
+      F5007F7F7F000000000000000000000000000000000000000000000000007F7F
+      7F00EAEAEA00EAEAEA0000000000B0B0B000B0B0B000EFF1FC00EAEAEA00EAEA
+      EA007F7F7F000000000000000000000000000000000000000000000000005052
+      5C00010932000323C9000323C900010F5800010B3D000521AF000623B5000209
+      2B002020200000000000000000000000000000000000000000000000000053EF
+      FC0073EEFD006FE8FD006FE5FD0070E0FD0069DAFD005BD1FD003FC3FC0020B3
+      FC0029AFFC000000000000000000000000000000000000000000000000009696
+      9600EDEDED00EDEDED00F5F5F500EDEDED00EDEDED00F5F5F500EDEDED00EDED
+      ED00969696000000000000000000000000000000000000000000000000008B8B
+      8B00DBDBDB00DBDBDB00EAEAEA00DBDBDB00DBDBDB00EAEAEA00DBDBDB00DBDB
+      DB008B8B8B00000000000000000000000000000000000000000000000000BFBF
+      BF00010726000323C9000323C9000323C9000323C8000423C4000523BE000109
+      2F007F7F7F000000000000000000000000000000000000000000000000005FF1
+      FC008DF1FD0088EDFD0088EAFD0088E5FD0089E2FD008BDFFD008ADBFD0075D0
+      FD003BB5FC000000000000000000000000000000000000000000000000009696
+      9600EDEDED00EDEDED00F5F5F500EDEDED00EDEDED00F5F5F500EDEDED00EDED
+      ED00969696000000000000000000000000000000000000000000000000008B8B
+      8B00DBDBDB00DBDBDB00EAEAEA00DBDBDB00DBDBDB00EAEAEA00DBDBDB00DBDB
+      DB008B8B8B000000000000000000000000000000000000000000000000000000
+      00006171C4000323C9000323C90002126500010F58000323C9000323C7003242
+      9100000000000000000000000000000000000000000000000000000000006DF2
+      FD00ACF5FE00A5F1FE00A5EFFE00A5ECFE00A5E9FE00A5E6FE00A5E3FE00B1E5
+      FE005BC2FD000000000000000000000000000000000000000000000000004040
+      400089898900969696007F7F7F0096969600969696007F7F7F00969696009696
+      9600404040000000000000000000000000000000000000000000000000004040
+      4000808080008B8B8B007F7F7F008B8B8B008B8B8B007F7F7F008B8B8B008B8B
+      8B00404040000000000000000000000000000000000000000000000000000000
+      000000000000A0ACEB00212B5F000000000000000000111843008191E4000000
+      0000000000000000000000000000000000000000000000000000000000007FF3
+      FD00D2F9FE00C9F6FE00C9F5FE00C9F3FE00C9F2FE00C9F0FE00C9EDFE00D5F1
+      FE0066C6FD000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000084F5
+      FE00DEFAFF00D4F8FF00D4F7FF00D4F6FF00D4F4FF00D4F3FF00D4F1FF00E1F5
+      FF0069C6FD000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000000046EF
+      FB004CE9FD004CE4FD004CDEFD004CD9FD004CD3FD004CCDFD004CC7FD004CC2
+      FD0041B8FB000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000A1ADEB00425AD700425AD700A1ADEB00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000048AA310046A32C00449B260042942000408C1B003E8415003C7C0F003A75
+      0A00507E22000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000A2AFF1008394EC0000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000DBDBDB0060606000C5C5C500BFBFC0005A5A5A00BFBFBF000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000008191E4000323C9000323C9008191E400000000000000
+      0000000000000000000000000000000000000000000000000000000000009FD2
+      950048AA310046A32C00449B260042942000408C1B003E8415003C7C0F003A75
+      0A00AEC39B000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000002846E0001737DB00EFF2FC00000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00009F9F9F00000000003D3D3D00BCBCBD00B5B4B60042424300000000006060
+      6000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000008191E4000323C9000323C9008191E400000000000000
+      000000000000000000000000000000000000000000000000000000000000EAF1
+      E90052AF3D0046A32C00449B260042942000408C1B003E8415003C7C0F005185
+      2700FFFFFF000000000000000000000000000000000000000000000000000000
+      00000000000000000000A2B0F300092BDC00082AD9008394EA00000000000000
+      000000000000000000000000000000000000000000000000000000000000FCFC
+      FC00B6B6B600A3A3A300B6B6B700C8C8C900C1C1C200A3A3A400878788008181
+      8200E4E3E400000000000000000000000000000000000000000000000000A1AD
+      EB008191E4008191E400425AD7000323C9000323C900425AD7008191E4008191
+      E400A1ADEB00000000000000000000000000000000000000000000000000FFFF
+      FF009ECF920046A32C00449B260042942000408C1B003E8415003C7C0F00AFC6
+      9D00FFFFFF000000000000000000000000000000000000000000000000000000
+      000000000000000000002946E300092BDC00082AD9001735D800EFF1FC000000
+      000000000000000000000000000000000000000000000000000000000000F7F7
+      F700EBEBEC00E4E4E400C1C1C100343434003232320087878700BFBFC000B7B7
+      B800C0C0C000000000000000000000000000000000000000000000000000425A
+      D700203CCF002B46D1003750D4002B46D100203CCF000D2CCB000726CA000323
+      C900425AD700000000000000000000000000000000000000000000000000FFFF
+      FF00EAF0E90050A838004C9F2F00509C31004E952C0046891F00538C2C00FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000000000000000
+      000000000000A3B0F4001D3DE1001E3DDF001D3CDC001D3BD9008595E9000000
+      000000000000000000000000000000000000000000000000000000000000FEFE
+      FE00F8F8F800F0F0F1008484840000000000000000004E4E4E00CBCBCC00C4C4
+      C500BCBCBD0000000000000000000000000000000000000000000000000097A4
+      E900A9B5EC0095A3E8007C8CE2006478DD004D63D8003851D4002641D0001431
+      CD00465DD700000000000000000000000000000000000000000000000000FFFF
+      FF00FFFFFF009DCB8F0070B3590076B15D0074AC59006FA35000B2CAA200FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000000000000000
+      0000000000003B57E8004C65E8004B64E5004A63E3004A62E1003853DA00EFF1
+      FC0000000000000000000000000000000000000000000000000000000000BFBF
+      BF0000000000FCFCFC004E4E4E0000000000000000002A2A2A00D8D8D800D0D0
+      D10063636400000000000000000000000000000000000000000000000000CBD1
+      F400D6DBF600D3D9F5009AA7E9007C8CE2006478DD006F81E00099A6E900909E
+      E700A5B0EC00000000000000000000000000000000000000000000000000FFFF
+      FF00FFFFFF00EAF0E80075B55E009AC6880099C285007BAA5F00FFFFFF00FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000000000000000
+      0000A3B1F5005870EB006E82EC006E82EA006D81E8006D80E600667BE3008999
+      E800000000000000000000000000000000000000000000000000000000006060
+      60004040400000000000FEFEFE006F6F6F004D4D4D00DDDDDD00E4E4E5003737
+      3700202020000000000000000000000000000000000000000000000000000000
+      00000000000000000000AAB5EC0095A3E8007C8CE2009BA8E900000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00A3CB9500BAD8AE00B1D0A100B0CBA100FFFFFF00FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000000000000000
+      00004E69ED0094A4F20094A3F10093A2F00093A2EE0093A1ED0092A1EB005D72
+      DF00EFF1FC00000000000000000000000000000000000000000000000000BFBF
+      BF0030303000000000000000000000000000FEFEFE00F8F8F800F1F1F1003B3B
+      3B007F7F7F000000000000000000000000000000000000000000000000000000
+      00000000000000000000ABB6ED00A9B5EC0095A3E800A1ADEB00000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00EAEFE800A2CA920097C08200FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00000000000000000000000000000000000000000000000000A4B1
+      F60093A3F400BDC6F700BDC6F600BDC6F500BCC6F500BCC5F400BCC5F300B1BB
+      F0008E9CE8000000000000000000000000000000000000000000000000000000
+      0000DFDFDF000000000000000000808080007070700000000000FCFCFC00ACAB
+      AC00000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000B6BFEF0097A4E90094A2E800B3BDEF00000000000000
+      000000000000000000000000000000000000000000000000000000000000FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF009BC38A00B1CEA300FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF000000000000000000000000000000000000000000000000004662
+      EE00ADB9F600ADB8F500ADB8F400ACB8F300ACB7F200ABB7F100ABB6F000ABB6
+      EF005A6FDC000000000000000000000000000000000000000000000000000000
+      0000000000000000000070707000000000000000000050505000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000424D3E000000000000003E000000
+      2800000040000000400000000100010000000000000200000000000000000000
+      000000000000000000000000FFFFFF0000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000FFFFFFFF00000000FFFFFFFF00000000
+      F007F00700000000F007E00700000000F007E00700000000F007E00700000000
+      F007E00700000000E007E00700000000E007E00700000000E007E00700000000
+      E007E00700000000E007E00700000000E007E00700000000E007E00700000000
+      FFFFE00700000000FFFFFFFF00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFF007FE7FFE3FF81FE007F81FF81FF00FE007F81FF81FE007E007
+      F81FF81FE007E007E007E007E007E007E007E007E007E007E247E207E007E007
+      E007E007E007E007E007E007F00FE007E007E007F81FE007FFFFFFFFFFFFE007
+      FFFFFFFFFFFFE007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFC3FF007FE7FF81FFC3FE007FE3FF00FFC3FE007FC3FE007
+      E007E007FC1FE007E007E007F81FE007E007E007F80FE807E007E007F00FE407
+      FC3FE007F007E707FC3FE007E007F64FFC3FE007E007FC3FFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000
+      000000000000}
+  end
+  object EasyQuery8: TEasyQuery
+    RequestLive = False
+    CurrentVersion = '6.30 '
+    InMemory = False
+    BDELikeFilter = False
+    Left = 552
+    Top = 360
+  end
+end
