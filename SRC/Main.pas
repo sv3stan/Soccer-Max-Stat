@@ -29,7 +29,7 @@ type
     NextGrid3: TNextGrid;
     NextGrid1: TNextGrid;
     NextGrid5: TNextGrid;
-    NextGrid6: TNextGrid; {общая таблица + последние игры}
+    NextGrid6: TNextGrid; { общая таблица + последние игры }
     NextGrid7: TNextGrid;
     NextGrid8: TNextGrid;
     NextGrid9: TNextGrid;
@@ -1591,7 +1591,7 @@ procedure TForm1.NextGrid9SelectCell(
   end;
 
 procedure TForm1.NextGrid9Click(Sender: TObject);
-// Выбор игрока из отчета гостевой команды
+  // Выбор игрока из отчета гостевой команды
   begin
     // ShortDateFormat := 'dd/mm';
     Team_2 := NextGrid11.Columns[2].header.Caption;
@@ -1603,7 +1603,7 @@ procedure TForm1.NextGrid9Click(Sender: TObject);
   end;
 
 procedure TForm1.NextGrid7Click(Sender: TObject);
-// Выбор игрока из отчета домашней команды
+  // Выбор игрока из отчета домашней команды
   begin
     // ShortDateFormat := 'dd/mm';
     Team_1 := NextGrid11.Columns[0].header.Caption;
@@ -1834,7 +1834,7 @@ procedure TForm1.Button1Click(Sender: TObject);
   end;
 
 procedure TForm1.NextGrid4Click(Sender: TObject);
-// выбор статистики из шахматок
+  // выбор статистики из шахматок
   begin
     if ((CurrentCol > 1) and (CurrentCol < 26)) then
       begin
@@ -1918,7 +1918,7 @@ procedure TForm1.NextGrid3SelectCell(
   end;
 
 procedure TForm1.NextGrid3Click(Sender: TObject);
-// Составить отчет об игре из NextGrid3
+  // Составить отчет об игре из NextGrid3
   begin
     Form3.sost_otchet(
         Team_1,
